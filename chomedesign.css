@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	background: whitesmoke;
+	min-height: 200vh;
+}
+
+/* HEADER */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+header.sticky{
+	padding: 5px 100px;
+	background: #fff;
+}
+
+header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition: 0.6s;
+}
+
+header ul{
+	position:relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+header.sticky ul li a{
+	color: #000;
+}
+
+/* BANNER */
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(Pictures/banner.jpg);
+	background-size: cover;
+}
+
+/* ABOUT US */
+.aboutus{
+	position: relative;
+	width: 100%;
+}
+
+/* BEST SELLER */
+
+.bseller{
+	background-image: linear-gradient(whitesmoke, black);
+	justify-content: center;
+	position: relative;
+	display: flex;
+  	flex-wrap:wrap;
+}
+
+.bsellerh1{
+	font-size: 75px;
+	padding-top: 50px;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition: 0.6s;
+	text-align: center;
+	flex: 0 0 100%;
+}
+
+.card{
+	height: 500px;
+	margin: 50px;
+	box-shadow: 5px 5px 20px black;
+	overflow: hidden;
+}
+
+.bseller img{
+	height: 500px;
+	width: 350px;
+	border-radius: 3px;
+	transition: .5s;
+}
+
+.intro{
+	height: 70px;
+	width: 350px;
+	padding: 6px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 50px;
+	background: rgb(27, 27, 27, .5);
+	color: white;
+	transition: .5s;
+}
+
+.card .intro p{
+	font-size: 20px;
+	margin: 20px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.card .intro p span{
+	font-weight: bold;
+}
+
+.card:hover{
+	cursor: pointer;
+}
+
+.card:hover .intro{
+	height: 220px;
+	bottom: 40px;
+	background: black;
+}
+
+.card:hover p{
+	opacity: 1;
+	visibility: visible;
+}
+
+.card:hover img{
+	transform: scale(1.1) rotate(-3deg);
+}
